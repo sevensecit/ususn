@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>SKLEP AKWARYSTYCZNY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        .main {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            height: 1px;
+            width: 1px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: -24vw -44vh 2px 2px #fff, 38vw -4vh 0px 0px #fff, -20vw -48vh 1px 2px #fff, -39vw 38vh 3px 1px #fff, -42vw -11vh 0px 3px #fff, 12vw 15vh 3px 3px #fff, 42vw 6vh 3px 2px #fff, -8vw 9vh 0px 2px #fff, 34vw -38vh 1px 0px #fff, -17vw 45vh 3px 1px #fff, 22vw -36vh 3px 2px #fff, -42vw 1vh 1px 0px #fff;
+            animation: zoom 10s alternate infinite;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.5);
+            }
+        }
+
+        li {
+            color: #fff;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main"></div>
+    <nav class="navbar navbar-expand-lg bg-body-black" style="color: #fff !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="logo.svg" alt="logo" width="100" height="100" style="background-color: #fff;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff !important;">
+                            Oferta
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #000; color: #fff;">
+                            <li style="background-color: #000; color: #fff;"><a style="background-color: #000; color: #fff;" class="dropdown-item" href="#">Ryby</a></li>
+                            <li style="background-color: #000; color: #fff;"><a style="background-color: #000; color: #fff;" class="dropdown-item" href="#">Krewetki</a></li>
+                            <li style="background-color: #000; color: #fff;"><a style="background-color: #000; color: #fff;" class="dropdown-item" href="#">Ślimaki</a></li>
+                            <li style="background-color: #000; color: #fff;"><a style="background-color: #000; color: #fff;" class="dropdown-item" href="#">Rośliny</a></li>
+                            <li style="background-color: #000; color: #fff;"><a style="background-color: #000; color: #fff;" class="dropdown-item" href="#">Akwaria na wymiar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="color: #fff !important;">O Nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kontakt.html" class="nav-link" style="color: #fff !important;">Kontakt</a>
+                    </li>
+
+                    <form class="d-flex justify-content-end" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-left: 10%; margin-right:10%; height: 700px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to= "2" aria-label= "Slide 3"></button> 
+        </div>
+
+        <div class= "carousel-inner">
+            <div class= "carousel-item active">
+                <img src= "krewtki.jpg"
+                     class= "d-block w-100"
+                     alt= "..."
+                     style= "height:700px;">
+             </div>
+
+             <div class= "carousel-item">
+                <img src= "koi.jpeg"
+                     class= "d-block w-100"
+                     alt= "..."
+                     style= "height:700px;">
+             </div>
+
+             <div class= "carousel-item">
+                <img src= "aqu.jpg"
+                     class= "d-block w-100"
+                     alt= "..."
+                     style= "height:700px;">
+             </div> 
+         </div>
+
+         <button class= "carousel-control-prev"
+                 type= "button"
+                 data-bs-target="#carouselExampleIndicators"
+                 data-bs-slide= "prev">
+             <span class= "carousel-control-prev-icon"
+                   aria-hidden= "true"></span>
+             <span class= "visually-hidden">Previous</span> 
+         </button>
+
+         <button class= "carousel-control-next"
+                 type= "button"
+                 data-bs-target="#carouselExampleIndicators"
+                 data-bs-slide= "next">
+             <span class= "carousel-control-next-icon"
+                   aria-hidden= "true"></span> 
+             <span class= "visually-hidden">Next</span> 
+         </button> 
+     </div>
+     <div class= "container mt-4">
+         <div class= "jumbotron d-flex justify-content-center text-white bg-dark">
+             <h1>Nasze Projekty</h1> 
+         </div>
+
+         <div class= "row mx-0">
+             <div class= "col-lg-4 col-md-6 mb-4 px-2">
+                 <img src= "i2.jpg"
+                      class= "w-100 shadow-1-strong mb-3"
+                      alt= "Projekt A"/>
+                 <img src= "i1.jfif"
+                      class= "w-100 shadow-1-strong"
+                      alt= "Projekt B"/>
+             </div>
+
+             <div class= "col-lg-4 col-md-6 mb-4 px-2">
+                 <img src= "i3.jpg"
+                      class= "w-100 shadow-1-strong mb-3"
+                      alt= "Projekt C"/>
+                 <img src= "koi.jpg"
+                      class= "w-100 shadow-1-strong"
+                      alt= "Projekt D"/>
+             </div>
+
+             <div class= "col-lg-4 col-md-6 mb-4 px-2">
+                 <img src= "i4.jpg"
+                      class= "w-100 shadow-1-strong mb-3"
+                      alt= "Projekt E"/>
+                 <img src= "i6.jpg"
+                      class= "w-100 shadow-1-strong"
+                      alt= "Projekt F"/>
+             </div>
+
+         </div> 
+     </div> 
+
+</body> 
+</html>

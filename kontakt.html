@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+  
+body{
+    background-color: #000;
+}
+
+.main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: -24vw -44vh 2px 2px #fff,38vw -4vh 0px 0px #fff,-20vw -48vh 1px 2px #fff,-39vw 38vh 3px 1px #fff,-42vw -11vh 0px 3px #fff,12vw 15vh 3px 3px #fff,42vw 6vh 3px 2px #fff,-8vw 9vh 0px 2px #fff,34vw -38vh 1px 0px #fff,-17vw 45vh 3px 1px #fff,22vw -36vh 3px 2px #fff,-42vw 1vh 1px 0px #fff;
+    animation: zoom 10s alternate infinite;
+}
+.dropdown-menu>li:hover{
+    background-color: gray;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+    </style>
+    <title>Kontakt</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main"></div>
+    <nav class="navbar navbar-expand-lg bg-body-black" style="color: #fff !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="logo.svg" alt="logo" width="100" height="100" style="background-color: #fff;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #fff !important;">
+                  Oferta
+                </a>
+                <ul class="dropdown-menu" style="background-color: #000; color: #fff;">
+                  <li style="background-color: #000; color: #fff;"><a style="background-color: #000; color: #fff;"  class="dropdown-item" href="#">Ryby</a></li>
+                  <li style="background-color: #000; color: #fff;"><a style="background-color: #000; color: #fff;" class="dropdown-item" href="#">Krewetki</a></li>
+                  <li style="background-color: #000; color: #fff;"><a style="background-color: #000; color: #fff;" class="dropdown-item" href="#">Ślimaki</a></li>
+                  <li style="background-color: #000; color: #fff;"><a style="background-color: #000; color: #fff;"  class="dropdown-item" href="#">Rośliny</a></li>
+                  <li style="background-color: #000; color: #fff;"><a style="background-color: #000; color: #fff;" class="dropdown-item" href="#">Akwaria na wymiar</a></li>
+
+
+                </ul>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="color: #fff !important;">O Nas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="kontakt.html" class="nav-link" style="color: #fff !important;">Kontakt</a>
+                </li>
+                
+                <form class="d-flex justify-content-end" role="search" >
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="aa" style="display: flex; justify-content: center; color: #fff;">      <form style="width: 26rem;">
+        <!-- Name input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="text" id="form4Example1" class="form-control" />
+          <label class="form-label" for="form4Example1">Name</label>
+        </div>
+      
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="email" id="form4Example2" class="form-control" />
+          <label class="form-label" for="form4Example2">Email address</label>
+        </div>
+      
+        <!-- Message input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+          <label class="form-label" for="form4Example3">Message</label>
+        </div>
+      
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="form4Example4"
+            checked
+          />
+          <label class="form-check-label" for="form4Example4">
+            Send me a copy of this message
+          </label>
+        </div>
+      
+        <!-- Submit button -->
+         <div class="bb" style="display: flex; justify-content: center;">
+        <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4" >Send</button>
+    </div>
+      </form>
+    </div>
+
+</body>
+</html>
